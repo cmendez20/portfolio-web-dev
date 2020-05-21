@@ -1,0 +1,28 @@
+// colors 
+$color-primary: #1D3557;
+$color-secondary: #457B9D;
+// $color-secondary: #E63946;
+$color-white: #f0f0f0;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px; 
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh repeat(3, min-content);
+}
