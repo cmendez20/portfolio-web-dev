@@ -1,0 +1,45 @@
+#contact-section {
+  background-color: $color-primary;
+  color: $color-white;
+  display: grid;
+  grid-template-rows: 30vh repeat(2, min-content);
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 2rem;
+
+  h2 {
+    grid-row: 2 / 3;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  width: 45vw;
+  justify-content: space-between;
+  grid-row: 3 / -1;
+  // transition: all .2s;
+
+  i {
+    margin-right: 1rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $color-white;
+    font-size: 2.4rem;
+    text-decoration: none;
+    transition: all .2s;
+
+    &:hover {
+      transform: translateY(-3px);
+      color: $color-tertiary;
+    }
+  }
+
+  &__text {
+    @media only screen and (max-width: 90rem) {
+      display: none;
+    }
+  }
+}

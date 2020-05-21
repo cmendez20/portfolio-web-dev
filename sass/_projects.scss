@@ -1,0 +1,32 @@
+#projects {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-row-gap: 2rem;
+  background-color: $color-tertiary;
+  padding: 9rem 0;
+
+  h2 {
+    align-self: center;
+    text-align: center;
+    color: $color-white;
+  }
+}
+
+.project-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 60rem));
+  grid-row-gap: 3rem;
+  align-items: center;
+  justify-items: center;
+
+  .project-img {
+    width: 100%;
+  }
+
+  &__card {
+    // background-color: $color-secondary;
+    // color: $color-white;
+    // height: 45rem;
+    // width: 40rem;
+  }
+}

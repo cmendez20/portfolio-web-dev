@@ -4,35 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chris Mendez | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./css/main.css">
 </head>
-<body id="top">
+<body id="home">
   <main class="container">
     <header class="header">
       <nav id="navbar" class="navbar">
         <ul class="navbar__list">
-          <li><a href="#top" class="navbar__list__link">About</a></li>
-          <li><a href="#project-section" class="navbar__list__link">Projects</a></li>
-          <li><a href="#contact-section " class="navbar__list__link">Contact</a></li>
+          <li><a href="#home" class="navbar__list__link">About</a></li>
+          <li><a href="#projects" class="navbar__list__link">Projects</a></li>
+          <li><a href="#contact-section" class="navbar__list__link">Contact</a></li>
         </ul>
       </nav>
       <section id="welcome-section">
-        <h1 class="heading-1">Hi, I'm Chris,</h1>
-        <h4 class="heading-4">a front-end web developer.</h4>
+        <h1 class="heading-1">Hi, I'm Chris</h1>
+        <h4 class="heading-4 welcome-section__description">a front-end web developer.</h4>
       </section>
     </header>
 
-    <section id="project-section">
-      project section
+    <section id="projects">
+      <h2 class="heading-2">Recent Works</h2>
+      <div class="project-showcase">
+        <div class="project-showcase__card">
+          <img src="./img/portfolio-queen-img-min.png" alt="queen website" class="project-img">
+          <h3 class="heading-3">Queen-Inspired Website</h3>
+        </div>
+        <div class="project-showcase__card">
+          <img src="./img/portfolio-ramen-website-img-min.png" alt="ramen website" class="project-img">
+          <h3 class="heading-3">Overview of Japanese Ramen</h3>
+        </div>
+        <div class="project-showcase__card">
+          <img src="./img/portfolio-landing-page-img-min.png" alt="landing page website" class="project-img">
+          <h3 class="heading-3">Otaku Beats Mock Landing Page</h3>
+        </div>
+        <div class="project-showcase__card">
+          <img src="./img/portfolio-technical-documentation-img-min.png" alt="technical documentation page" class="project-img">
+          <h3 class="heading-3">Technical Documentation Page</h3>
+        </div>
+        <div class="project-showcase__card">
+          <img src="./img/portfolio-survey-page-min.jpg" alt="survey page" class="project-img">
+          <h3 class="heading-3">Survey Page</h3>
+        </div>
+        <div class="project-showcase__card">
+          <img src="./img/portfolio-tribute-website-img-min.png" alt="tribute page" class="project-img">
+          <h3 class="heading-3">Biography Website</h3>
+        </div>
+      </div>
     </section>
 
     <section id="contact-section">
-      contact section
+      <h2 class="heading-2">Connect with me.</h2>
+      <div class="social-media">
+        <a href="https://github.com/cmendez20" target="_blank" id="profile-link" class="social-media__link"><i class="fab fa-github"></i><span class="social-media__text">Github</span></a>
+        <a href="https://twitter.com/CMendecj812" target="_blank" class="social-media__link"><i class="fab fa-twitter"></i><span class="social-media__text">Twitter</span></a>
+        <a href="mailto:mendecj812@gmail.com" target="_blank" class="social-media__link"><i class="fas fa-envelope"></i><span class="social-media__text">Email</span></a>
+        </div>
+        
+      </div>
     </section>
 
     <footer id="footer">
-      footer
+      &copy;2020 Designed & Developed by Chris Mendez.
     </footer>
   </main>
+  <script src="https://kit.fontawesome.com/dcb68dae8b.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
