@@ -12,7 +12,7 @@
   }
 }
 
-.project-showcase {
+.project-tile {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 50rem));
   grid-gap: 3rem;
@@ -22,11 +22,12 @@
   .project-img {
     width: 100%;
   }
+}
 
-  &__card {
-    // background-color: $color-secondary;
-    // color: $color-white;
-    // height: 45rem;
-    // width: 40rem;
-  }
+.card__description {
+  text-align: center;
+}
+
+.card__heading {
+  padding: 1.5rem 0;
 }

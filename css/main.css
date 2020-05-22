@@ -42,6 +42,48 @@ body {
       grid-template-rows: 100vh min-content 85vh 15vh;
 }
 
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  background-color: #457B9D;
+  color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  -webkit-transition: 220ms all ease-in-out;
+  transition: 220ms all ease-in-out;
+}
+
+.btn:hover, .btn:active {
+  background-color: #37627e;
+}
+
+.btn:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  -webkit-box-shadow: 0 0 0 4px #294a5e;
+          box-shadow: 0 0 0 4px #294a5e;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
 .header {
   display: -ms-grid;
   display: grid;
@@ -122,7 +164,7 @@ body {
   color: #f0f0f0;
 }
 
-.project-showcase {
+.project-tile {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(40rem, 50rem))[auto-fit];
@@ -136,8 +178,16 @@ body {
           justify-content: center;
 }
 
-.project-showcase .project-img {
+.project-tile .project-img {
   width: 100%;
+}
+
+.card__description {
+  text-align: center;
+}
+
+.card__heading {
+  padding: 1.5rem 0;
 }
 
 #contact-section {
