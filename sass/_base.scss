@@ -4,6 +4,9 @@ $color-secondary: #457B9D;
 $color-tertiary: #E63946;
 $color-white: #f0f0f0;
 
+// Responsive Breakpoints 
+$bp-sm: 36em; // 576px / 16px;
+
 
 * {
   margin: 0;
@@ -44,7 +47,7 @@ body {
 
   padding: .5rem 0.75rem;
   min-width: 10ch;
-  min-height: 44px;
+  min-height: 4.4rem;
   transition: 220ms all ease-in-out;
   
   &:hover,

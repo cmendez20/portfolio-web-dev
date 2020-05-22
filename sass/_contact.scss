@@ -36,10 +36,4 @@
       color: $color-tertiary;
     }
   }
-
-  &__text {
-    @media only screen and (max-width: 90rem) {
-      display: none;
-    }
-  }
 }
