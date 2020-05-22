@@ -125,13 +125,15 @@ body {
 .project-showcase {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(40rem, 60rem))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(40rem, 60rem));
-  grid-row-gap: 3rem;
+  -ms-grid-columns: (minmax(40rem, 50rem))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 50rem));
+  grid-gap: 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .project-showcase .project-img {
@@ -166,7 +168,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 45vw;
+  width: 50vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
