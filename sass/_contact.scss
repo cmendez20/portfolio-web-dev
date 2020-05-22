@@ -1,8 +1,8 @@
-#contact-section {
+#contact {
   background-color: $color-primary;
   color: $color-white;
   display: grid;
-  grid-template-rows: 30vh repeat(2, min-content);
+  grid-template-rows: 32vh repeat(2, min-content);
   justify-items: center;
   align-items: center;
   grid-row-gap: 2rem;
@@ -15,7 +15,7 @@
 .social-media {
   display: flex;
   justify-content: center;
-  width: 50vw;
+  width: 35vw;
   justify-content: space-between;
   grid-row: 3 / -1;
   // transition: all .2s;

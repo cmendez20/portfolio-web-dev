@@ -42,7 +42,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
 
-  padding: 0.25em 0.75em;
+  padding: .5rem 0.75rem;
   min-width: 10ch;
   min-height: 44px;
   transition: 220ms all ease-in-out;
@@ -57,9 +57,9 @@ body {
     outline-color: transparent;
     box-shadow: 0 0 0 4px scale-color($color-secondary, $lightness: -40%);
   }
+}
 
-  a {
-    text-decoration: none;
-    color: $color-white;
-  }
+a {
+  text-decoration: none;
+  color: $color-white;
 }

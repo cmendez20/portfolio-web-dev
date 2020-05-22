@@ -28,6 +28,11 @@
   text-align: center;
 }
 
+.card__description a:nth-child(3) {
+  margin-left: 3rem;
+}
+
 .card__heading {
   padding: 1.5rem 0;
+  color: $color-white;
 }

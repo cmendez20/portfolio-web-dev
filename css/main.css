@@ -61,7 +61,7 @@ body {
   border-radius: 8px;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
-  padding: 0.25em 0.75em;
+  padding: .5rem 0.75rem;
   min-width: 10ch;
   min-height: 44px;
   -webkit-transition: 220ms all ease-in-out;
@@ -79,9 +79,17 @@ body {
           box-shadow: 0 0 0 4px #294a5e;
 }
 
-.btn a {
+a {
   text-decoration: none;
   color: #f0f0f0;
+}
+
+#navbar {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  width: 100%;
 }
 
 .header {
@@ -186,18 +194,23 @@ body {
   text-align: center;
 }
 
-.card__heading {
-  padding: 1.5rem 0;
+.card__description a:nth-child(3) {
+  margin-left: 3rem;
 }
 
-#contact-section {
+.card__heading {
+  padding: 1.5rem 0;
+  color: #f0f0f0;
+}
+
+#contact {
   background-color: #1D3557;
   color: #f0f0f0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 30vh (min-content)[2];
-      grid-template-rows: 30vh repeat(2, -webkit-min-content);
-      grid-template-rows: 30vh repeat(2, min-content);
+  -ms-grid-rows: 32vh (min-content)[2];
+      grid-template-rows: 32vh repeat(2, -webkit-min-content);
+      grid-template-rows: 32vh repeat(2, min-content);
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -205,7 +218,7 @@ body {
   grid-row-gap: 2rem;
 }
 
-#contact-section h2 {
+#contact h2 {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
@@ -218,7 +231,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50vw;
+  width: 35vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
