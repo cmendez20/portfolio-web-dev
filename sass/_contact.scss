@@ -2,7 +2,7 @@
   background-color: $color-primary;
   color: $color-white;
   display: grid;
-  grid-template-rows: 32vh repeat(2, min-content);
+  grid-template-rows: 33vh repeat(2, min-content);
   justify-items: center;
   align-items: center;
   grid-row-gap: 2rem;
@@ -18,10 +18,13 @@
   width: 35vw;
   justify-content: space-between;
   grid-row: 3 / -1;
-  // transition: all .2s;
 
   i {
-    margin-right: 1rem;
+    margin-right: 1.3rem;
+  }
+
+  &__link:link {
+    transition: all .2s;
   }
 
   &__link:link,
@@ -29,11 +32,11 @@
     color: $color-white;
     font-size: 2.4rem;
     text-decoration: none;
-    transition: all .2s;
+    
 
     &:hover {
       transform: translateY(-3px);
-      color: $color-tertiary;
+      color: $color-secondary;
     }
   }
 }

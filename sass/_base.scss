@@ -1,11 +1,11 @@
 // colors 
-$color-primary: #1D3557;
-$color-secondary: #457B9D;
-$color-tertiary: #E63946;
-$color-white: #f0f0f0;
+$color-primary: #2e3440;
+$color-secondary: #5e81ac;
+$color-white: #eceff4;
 
 // Responsive Breakpoints 
 $bp-sm: 36em; // 576px / 16px;
+$bp-lg: 68.75em; //1100x / 16px; 
 
 
 * {
@@ -24,6 +24,7 @@ body {
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
+  background-color: $color-primary;
 }
 
 .container {
@@ -41,7 +42,7 @@ body {
   cursor: pointer;
 
   background-color: $color-secondary;
-  color: #fff;
+  color: $color-white;
   border-radius: 8px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
 

@@ -16,6 +16,7 @@ body {
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
+  background-color: #2e3440;
 }
 
 .container {
@@ -40,8 +41,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  background-color: #457B9D;
-  color: #fff;
+  background-color: #5e81ac;
+  color: #eceff4;
   border-radius: 8px;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
@@ -53,19 +54,19 @@ body {
 }
 
 .btn:hover, .btn:active {
-  background-color: #37627e;
+  background-color: #48678c;
 }
 
 .btn:focus {
   outline-style: solid;
   outline-color: transparent;
-  -webkit-box-shadow: 0 0 0 4px #294a5e;
-          box-shadow: 0 0 0 4px #294a5e;
+  -webkit-box-shadow: 0 0 0 4px #364d69;
+          box-shadow: 0 0 0 4px #364d69;
 }
 
 a {
   text-decoration: none;
-  color: #f0f0f0;
+  color: #eceff4;
 }
 
 .heading-1 {
@@ -90,7 +91,7 @@ a {
   -ms-grid-rows: min-content 1fr;
       grid-template-rows: -webkit-min-content 1fr;
       grid-template-rows: min-content 1fr;
-  background-color: #1D3557;
+  background-color: #2e3440;
 }
 
 .navbar__list {
@@ -106,17 +107,19 @@ a {
           align-items: center;
   height: 7rem;
   width: 100%;
-  background-color: #1D3557;
+  background-color: #2e3440;
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .navbar__list__link {
   text-decoration: none;
-  color: #f0f0f0;
+  color: #eceff4;
   font-size: 1.8rem;
   padding: 4rem;
   -webkit-transition: all .2s;
@@ -124,7 +127,7 @@ a {
 }
 
 .navbar__list__link:hover {
-  background-color: #457B9D;
+  background-color: #5e81ac;
   color: #fff;
 }
 
@@ -142,7 +145,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #f0f0f0;
+  color: #eceff4;
 }
 
 #projects {
@@ -152,8 +155,8 @@ a {
       grid-template-rows: repeat(2, -webkit-min-content);
       grid-template-rows: repeat(2, min-content);
   grid-row-gap: 2rem;
-  background-color: #E63946;
-  padding: 9rem 0;
+  background-color: #2e3440;
+  padding: 6rem;
 }
 
 #projects h2 {
@@ -161,7 +164,7 @@ a {
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
-  color: #f0f0f0;
+  color: #eceff4;
 }
 
 .project-tile {
@@ -169,7 +172,8 @@ a {
   display: grid;
   -ms-grid-columns: (minmax(40rem, 50rem))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(40rem, 50rem));
-  grid-gap: 3rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -192,17 +196,17 @@ a {
 
 .card__heading {
   padding: 1.5rem 0;
-  color: #f0f0f0;
+  color: #eceff4;
 }
 
 #contact {
-  background-color: #1D3557;
-  color: #f0f0f0;
+  background-color: #2e3440;
+  color: #eceff4;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 32vh (min-content)[2];
-      grid-template-rows: 32vh repeat(2, -webkit-min-content);
-      grid-template-rows: 32vh repeat(2, min-content);
+  -ms-grid-rows: 33vh (min-content)[2];
+      grid-template-rows: 33vh repeat(2, -webkit-min-content);
+      grid-template-rows: 33vh repeat(2, min-content);
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -231,34 +235,55 @@ a {
 }
 
 .social-media i {
-  margin-right: 1rem;
+  margin-right: 1.3rem;
+}
+
+.social-media__link:link {
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .social-media__link:link, .social-media__link:visited {
-  color: #f0f0f0;
+  color: #eceff4;
   font-size: 2.4rem;
   text-decoration: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
 }
 
 .social-media__link:link:hover, .social-media__link:visited:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
-  color: #E63946;
+  color: #5e81ac;
 }
 
 #footer {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background-color: #1D3557;
-  color: #f0f0f0;
-  border-top: 3px solid #E63946;
+  background-color: #2e3440;
+  color: #eceff4;
+  border-top: 3px solid #5e81ac;
 }
 
 #footer p {
   text-align: center;
+}
+
+@media only screen and (max-width: 68.75em) {
+  .social-media {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social-media__link:not(:nth-child(3)) {
+    margin-bottom: 3rem;
+  }
 }
 
 @media only screen and (max-width: 36em) {
