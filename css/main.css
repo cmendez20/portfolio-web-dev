@@ -30,6 +30,8 @@ body {
 @media screen and (max-width: 768px) {
   .container {
     max-width: 100%;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
   }
 }
 
