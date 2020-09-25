@@ -1,6 +1,6 @@
 // colors 
 $color-primary: #2e3440;
-$color-secondary: #5e81ac;
+$color-secondary: #405A7D;
 $color-white: #eceff4;
 
 // Responsive Breakpoints 
@@ -30,6 +30,10 @@ body {
 .container {
   display: grid;
   grid-template-rows: 100vh min-content 85vh 15vh;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+  }
 }
 
 .btn {
@@ -66,4 +70,5 @@ body {
 a {
   text-decoration: none;
   color: $color-white;
+  font-weight: bold;
 }
