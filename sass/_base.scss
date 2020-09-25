@@ -1,7 +1,7 @@
 // colors 
 $color-primary: #2e3440;
-$color-secondary: #405A7D;
-$color-white: #eceff4;
+$color-accent: #BEC8DA;
+$color-white: #E5E8F0;
 
 // Responsive Breakpoints 
 $bp-sm: 36em; // 576px / 16px;
@@ -31,12 +31,12 @@ body {
   display: grid;
   grid-template-rows: 100vh min-content 85vh 15vh;
 
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
-    // min-height: 100vh;
-  /* mobile viewport bug fix */
-    min-height: -webkit-fill-available;
-  }
+  // @media screen and (max-width: 768px) {
+  //   max-width: 100%;
+  //   // min-height: 100vh;
+  // /* mobile viewport bug fix */
+  //   min-height: -webkit-fill-available;
+  // }
 }
 
 .btn {
@@ -48,8 +48,8 @@ body {
   justify-content: center;
   cursor: pointer;
 
-  background-color: $color-secondary;
-  color: $color-white;
+  background-color: $color-accent;
+  color: $color-primary;
   border-radius: 8px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
 
@@ -60,13 +60,13 @@ body {
   
   &:hover,
   &:active {
-    background-color: scale-color($color-secondary, $lightness: -20%);
+    background-color: $color-white;
   }
   
   &:focus {
     outline-style: solid;
     outline-color: transparent;
-    box-shadow: 0 0 0 4px scale-color($color-secondary, $lightness: -40%);
+    box-shadow: 0 0 0 4px scale-color($color-accent, $lightness: -40%);
   }
 }
 

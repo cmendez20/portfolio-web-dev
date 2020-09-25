@@ -27,8 +27,8 @@
     transition: all .2s;
 
     &:hover {
-      background-color: $color-secondary;
-      color: #fff;
+      background-color: $color-accent;
+      color: $color-primary;
     }
   }
 }
