@@ -12,13 +12,53 @@
 
 @media only screen and (max-width: $bp-sm) {
   html {
-    font-size: 45%;
+    font-size: 62.5%;
+  }
+
+  .heading-1 {
+    font-size: 3.6rem;
+  }
+
+  #contact .heading-2 {
+    font-size: 2.4rem;
+  }
+
+  .container {
+    max-width: 350px;
+  }
+
+  .navbar__list {
+    justify-content: flex-start;
+
+    &__link {
+      font-size: 1.6rem;
+      padding: 2rem;
+    }
+  }
+
+  #projects {
+    // max-width: 350px;
+    padding: 1rem;
+
+    h2 {
+      font-size: 3.6rem;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    img {
+      max-width: 350px;
+      margin: 0 auto;
+      margin-bottom: 2.4rem;
+    }
   }
 
   .navbar__list {
     justify-content: space-between;
   }
-  
+
   #contact h2 {
     font-size: 4.2rem;
   }

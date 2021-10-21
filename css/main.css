@@ -41,12 +41,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  background-color: #BEC8DA;
+  background-color: #bec8da;
   color: #2e3440;
   border-radius: 8px;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
-  padding: .5rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   min-width: 10ch;
   min-height: 4.4rem;
   -webkit-transition: 220ms all ease-in-out;
@@ -54,7 +54,7 @@ body {
 }
 
 .btn:hover, .btn:active {
-  background-color: #E5E8F0;
+  background-color: #e5e8f0;
 }
 
 .btn:focus {
@@ -66,7 +66,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #E5E8F0;
+  color: #e5e8f0;
   font-weight: bold;
 }
 
@@ -120,7 +120,7 @@ a {
 
 .navbar__list__link {
   text-decoration: none;
-  color: #E5E8F0;
+  color: #e5e8f0;
   font-size: 1.8rem;
   padding: 4rem;
   -webkit-transition: all .2s;
@@ -128,7 +128,7 @@ a {
 }
 
 .navbar__list__link:hover {
-  background-color: #BEC8DA;
+  background-color: #bec8da;
   color: #2e3440;
 }
 
@@ -146,26 +146,30 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #E5E8F0;
+  color: #e5e8f0;
 }
 
 #projects {
   display: -ms-grid;
   display: grid;
+  background-color: red;
   -ms-grid-rows: (min-content)[2];
       grid-template-rows: repeat(2, -webkit-min-content);
       grid-template-rows: repeat(2, min-content);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   grid-row-gap: 2rem;
   background-color: #2e3440;
   padding: 6rem;
 }
 
 #projects h2 {
+  margin-bottom: 4.8rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
-  color: #E5E8F0;
+  color: #e5e8f0;
 }
 
 .project-tile {
@@ -174,7 +178,7 @@ a {
   -ms-grid-columns: (minmax(40rem, 50rem))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(40rem, 50rem));
   grid-column-gap: 3rem;
-  grid-row-gap: 3rem;
+  grid-row-gap: 8rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -185,6 +189,36 @@ a {
 
 .project-tile .project-img {
   width: 100%;
+  max-height: 250px;
+  border-radius: 15px;
+  margin-bottom: 2.4rem;
+}
+
+.card__heading {
+  margin-bottom: 1.6rem;
+  color: #e5e8f0;
+  text-align: center;
+}
+
+.card__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 24rem;
+  margin: 0 auto;
+  margin-bottom: 2.4rem;
+  color: #e5e8f0;
+}
+
+.card__skills__text {
+  text-align: center;
+  border-bottom: 3px solid #bec8da;
 }
 
 .card__description {
@@ -195,14 +229,9 @@ a {
   margin-left: 3rem;
 }
 
-.card__heading {
-  padding: 1.5rem 0;
-  color: #E5E8F0;
-}
-
 #contact {
   background-color: #2e3440;
-  color: #E5E8F0;
+  color: #e5e8f0;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 33vh (min-content)[2];
@@ -245,7 +274,7 @@ a {
 }
 
 .social-media__link:link, .social-media__link:visited {
-  color: #E5E8F0;
+  color: #e5e8f0;
   font-size: 2.4rem;
   text-decoration: none;
 }
@@ -253,7 +282,7 @@ a {
 .social-media__link:link:hover, .social-media__link:visited:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
-  color: #BEC8DA;
+  color: #bec8da;
 }
 
 #footer {
@@ -261,8 +290,8 @@ a {
   display: grid;
   place-items: center;
   background-color: #2e3440;
-  color: #E5E8F0;
-  border-top: 3px solid #BEC8DA;
+  color: #e5e8f0;
+  border-top: 3px solid #bec8da;
 }
 
 #footer p {
@@ -289,7 +318,39 @@ a {
 
 @media only screen and (max-width: 36em) {
   html {
-    font-size: 45%;
+    font-size: 62.5%;
+  }
+  .heading-1 {
+    font-size: 3.6rem;
+  }
+  #contact .heading-2 {
+    font-size: 2.4rem;
+  }
+  .container {
+    max-width: 350px;
+  }
+  .navbar__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .navbar__list__link {
+    font-size: 1.6rem;
+    padding: 2rem;
+  }
+  #projects {
+    padding: 1rem;
+  }
+  #projects h2 {
+    font-size: 3.6rem;
+  }
+  #projects h3 {
+    font-size: 1.8rem;
+  }
+  #projects img {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 2.4rem;
   }
   .navbar__list {
     -webkit-box-pack: justify;
