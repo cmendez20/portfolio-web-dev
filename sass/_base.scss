@@ -11,6 +11,7 @@ $bp-lg: 68.75em; //1100x / 16px;
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  // background: rgba(255, 0, 0, 0.1);
 }
 
 html {
@@ -28,19 +29,13 @@ body {
 
 .container {
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: 100vh min-content 85vh 15vh;
-
-  // @media screen and (max-width: 768px) {
-  //   max-width: 100%;
-  //   // min-height: 100vh;
-  // /* mobile viewport bug fix */
-  //   min-height: -webkit-fill-available;
-  // }
 }
 
 .btn {
   display: inline-flex;
-  background-color: transparent;
+  background-color: none;
   font-family: inherit;
   padding: 0;
   align-items: center;

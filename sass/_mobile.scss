@@ -11,10 +11,6 @@
 }
 
 @media only screen and (max-width: $bp-sm) {
-  html {
-    font-size: 62.5%;
-  }
-
   .heading-1 {
     font-size: 3.6rem;
   }
@@ -23,12 +19,8 @@
     font-size: 2.4rem;
   }
 
-  .container {
-    max-width: 350px;
-  }
-
   .navbar__list {
-    justify-content: flex-start;
+    // justify-content: flex-end;
 
     &__link {
       font-size: 1.6rem;
@@ -36,10 +28,7 @@
     }
   }
 
-  #projects {
-    // max-width: 350px;
-    padding: 1rem;
-
+  .projects {
     h2 {
       font-size: 3.6rem;
     }
@@ -53,10 +42,6 @@
       margin: 0 auto;
       margin-bottom: 2.4rem;
     }
-  }
-
-  .navbar__list {
-    justify-content: space-between;
   }
 
   #contact h2 {
