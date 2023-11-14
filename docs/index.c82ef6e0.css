@@ -62,7 +62,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: #2e3440;
-  font-family: Poppins, sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
 }
@@ -102,7 +102,7 @@ body {
 
 a {
   color: #e5e8f0;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
 }
 
