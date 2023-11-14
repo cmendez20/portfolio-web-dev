@@ -2,10 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "A personal portfolio I developed with HTML, CSS, and SASS.",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html --dist-dir docs"
   },
   "keywords": [],
   "author": "",
