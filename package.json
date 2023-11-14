@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A personal portfolio I developed with HTML, CSS, and SASS.",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel src/index.html --dist-dir docs",
     "build": "parcel build src/index.html --dist-dir docs"
   },
   "keywords": [],
