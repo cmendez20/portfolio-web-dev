@@ -184,10 +184,25 @@ a {
 
 .social-media {
   display: flex;
+  align-items: center;
   justify-content: center;
-  width: 35vw;
-  justify-content: space-between;
+  gap: 5rem;
+  max-width: $bp-lg;
   align-self: flex-start;
+
+  &__link {
+    flex: 1 1 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    svg {
+      height: 4rem;
+      width: auto;
+      display: inline-block;
+    }
+  }
 
   &__link:link {
     transition: all 0.2s;

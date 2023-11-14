@@ -231,10 +231,26 @@ a {
 }
 
 .social-media {
-  justify-content: space-between;
+  justify-content: center;
   align-self: flex-start;
-  width: 35vw;
+  align-items: center;
+  gap: 5rem;
+  max-width: 68.75em;
   display: flex;
+}
+
+.social-media__link {
+  flex: 400px;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.social-media__link svg {
+  width: auto;
+  height: 4rem;
+  display: inline-block;
 }
 
 .social-media__link:link {
