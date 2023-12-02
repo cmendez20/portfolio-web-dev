@@ -1,18 +1,16 @@
 import { Link } from 'react-router-dom';
 
-const Project = () => {
+const Project = ({ id, title, imageUrl, skills }) => {
   return (
     <div className="mb-9 bg-slate-100 p-4 rounded-md">
-      <img
-        src="/img/portfolio-calculator.png"
-        alt="calcultor"
-        className="mb-4 rounded-md"
-      />
-      <h3 className="mb-4 font-medium">Minimalistic Calculator</h3>
+      <img src={imageUrl} alt={title} className="mb-4 rounded-md" />
+      <h3 className="mb-4 font-medium">{title}</h3>
       <div className="flex gap-8 mb-4">
-        <p className="text-slate-600 text-sm">HTML</p>
-        <p className="text-slate-600 text-sm">CSS</p>
-        <p className="text-slate-600 text-sm">JavaScript</p>
+        {skills.map(skill => (
+          <p key={id} className="text-slate-600 text-sm">
+            {skill}
+          </p>
+        ))}
       </div>
 
       <div className="flex gap-8 mb-3">
