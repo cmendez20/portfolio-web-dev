@@ -18,7 +18,7 @@ const Project = ({ id, title, imageUrl, skills }) => {
           Demo
         </a>
         <a href="" className="bg-slate-700 text-white px-3 py-1 rounded-md">
-          Demo
+          Code
         </a>
       </div>
       <Link
