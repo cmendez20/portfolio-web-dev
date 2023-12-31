@@ -22,14 +22,14 @@ const Project = ({ id, title, imageUrl, skills, demo, code }) => {
           <a
             href={demo}
             target="_blank"
-            className="bg-slate-700 text-white px-3 py-1 rounded-md hover:bg-slate-500 transition-colors"
+            className="bg-slate-700 text-white px-3 py-1 rounded-md hover:bg-slate-800 transition-colors"
           >
             Demo
           </a>
           <a
             href={code}
             target="_blank"
-            className="bg-slate-700 text-white px-3 py-1 rounded-md hover:bg-slate-500 transition-colors"
+            className="bg-slate-700 text-white px-3 py-1 rounded-md hover:bg-slate-800 transition-colors"
           >
             Code
           </a>
