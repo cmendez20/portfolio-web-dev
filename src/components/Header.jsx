@@ -20,7 +20,7 @@ const Header = () => {
             size: 42,
           }}
         >
-          <div className="flex gap-8">
+          <div className="flex gap-10">
             <a href="https://github.com/cmendez20" target="_blank">
               <FaGithub />
             </a>

@@ -18,7 +18,7 @@ const Project = ({ id, title, imageUrl, skills, demo, code }) => {
             </p>
           ))}
         </div>
-        <div className="flex gap-8 mb-6">
+        <div className="flex gap-8 mb-6 pb-2">
           <a
             href={demo}
             target="_blank"
@@ -36,7 +36,7 @@ const Project = ({ id, title, imageUrl, skills, demo, code }) => {
         </div>
         <Link
           to="calculator"
-          className="hover:underline max-w-max absolute right-[18px] bottom-[-24px]"
+          className="hover:underline max-w-max absolute right-[12px] bottom-[-24px]"
         >
           Read more &#8594;
         </Link>
