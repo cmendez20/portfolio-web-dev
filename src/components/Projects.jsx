@@ -30,8 +30,8 @@ const Projects = () => {
 
   return (
     <section className="mx-auto sm:max-w-lg xl:mx-0 xl:max-w-full">
-      <h2 className="text-2xl font-bold mb-4 md:text-3xl">Recent Works</h2>
-      <div className="xl:grid xl:grid-cols-2 xl:gap-12 xl:items-center">
+      <h2 className="text-2xl font-bold mb-6 md:text-3xl">Recent Works</h2>
+      <div className="xl:grid xl:grid-cols-2 xl:gap-12 xl:items-center xl:">
         {apps.map(app => (
           <Project
             key={app.id}
