@@ -6,24 +6,32 @@ const Projects = () => {
       title: 'Job Listings',
       imageUrl: '/img/portfolio-job-listings.png',
       skills: ['HTML', 'TailwindCSS', 'React'],
+      demoUrl: 'https://job-listings-cjmendez.netlify.app',
+      codeUrl: 'https://github.com/cmendez20/job-listings',
       id: 1,
     },
     {
       title: 'Typemaster Landing Page',
       imageUrl: '/img/portfolio-landing-page.png',
       skills: ['HTML', 'TailwindCSS', 'Responsive Design'],
+      demoUrl: 'https://typemaster-keyboards-cjmendez.netlify.app/',
+      codeUrl: 'https://github.com/cmendez20/typemaster-landing-page',
       id: 2,
     },
     {
       title: 'Etch-a-Sketch',
       imageUrl: '/img/portfolio-etch-a-sketch.png',
       skills: ['HTML', 'CSS', 'JavaScript'],
+      demoUrl: 'https://cmendez20.github.io/etch_a_sketch/',
+      codeUrl: 'https://github.com/cmendez20/etch_a_sketch',
       id: 3,
     },
     {
       title: 'Calculator',
       imageUrl: '/img/portfolio-calculator.png',
       skills: ['HTML', 'CSS', 'JavaScript'],
+      demoUrl: 'https://cmendez20.github.io/calculator_v2/',
+      codeUrl: 'https://github.com/cmendez20/calculator_v2',
       id: 4,
     },
   ];
@@ -39,6 +47,8 @@ const Projects = () => {
             title={app.title}
             imageUrl={app.imageUrl}
             skills={app.skills}
+            demo={app.demoUrl}
+            code={app.codeUrl}
           />
         ))}
       </div>

@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
-const Project = ({ id, title, imageUrl, skills }) => {
+const Project = ({ id, title, imageUrl, skills, demo, code }) => {
   return (
-    <div className="mb-9 p-6 rounded-md bg-slate-100">
+    <div className="mb-9 p-6 rounded-md bg-slate-100 shadow-md">
       <img
         src={imageUrl}
         alt={title}
@@ -20,13 +20,15 @@ const Project = ({ id, title, imageUrl, skills }) => {
         </div>
         <div className="flex gap-8 mb-6">
           <a
-            href=""
+            href={demo}
+            target="_blank"
             className="bg-slate-700 text-white px-3 py-1 rounded-md hover:bg-slate-500 transition-colors"
           >
             Demo
           </a>
           <a
-            href=""
+            href={code}
+            target="_blank"
             className="bg-slate-700 text-white px-3 py-1 rounded-md hover:bg-slate-500 transition-colors"
           >
             Code
@@ -34,7 +36,7 @@ const Project = ({ id, title, imageUrl, skills }) => {
         </div>
         <Link
           to="calculator"
-          className="hover:underline max-w-max absolute right-[24px] bottom-[-24px]"
+          className="hover:underline max-w-max absolute right-[18px] bottom-[-24px]"
         >
           Read more &#8594;
         </Link>
