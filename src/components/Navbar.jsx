@@ -1,9 +1,9 @@
 const Navbar = () => {
   return (
     <>
-      <nav className="flex justify-between items-center mb-14">
+      <nav className="flex justify-between items-center mb-20">
         <div>
-          <a href="#" className="font-bold">
+          <a href="#" className="font-bold text-2xl">
             Chris Mendez
           </a>
         </div>
