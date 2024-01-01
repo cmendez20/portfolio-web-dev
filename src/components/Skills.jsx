@@ -39,16 +39,17 @@ const Skills = () => {
             <p>React</p>
           </div>
           <div className="flex flex-col gap-3 items-center">
+            <FaUniversalAccess />
+            <p>Web Accessibility</p>
+          </div>
+          <div className="flex flex-col gap-3 items-center">
             <FaSass />
             <p>SCSS</p>
           </div>
+
           <div className="flex flex-col gap-3 items-center">
             <FaGitAlt />
             <p>Git</p>
-          </div>
-          <div className="flex flex-col gap-3 items-center">
-            <FaUniversalAccess />
-            <p>Web Accessibility</p>
           </div>
           <div className="flex flex-col gap-3 items-center">
             <FaMobile />

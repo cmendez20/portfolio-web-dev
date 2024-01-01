@@ -36,7 +36,7 @@ const Project = ({ id, title, imageUrl, skills, demo, code }) => {
         </div>
         <Link
           to="calculator"
-          className="hover:underline max-w-max absolute right-[12px] bottom-[-18px]"
+          className="hover:underline max-w-max absolute right-[12px] bottom-[-24px]"
         >
           Read more &#8594;
         </Link>
