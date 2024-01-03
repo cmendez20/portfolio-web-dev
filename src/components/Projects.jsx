@@ -27,11 +27,11 @@ const Projects = () => {
       id: 3,
     },
     {
-      title: 'Calculator',
-      imageUrl: '/img/portfolio-calculator.png',
+      title: 'Cocktail App',
+      imageUrl: '/img/portfolio-cocktail-app.png',
       skills: ['HTML', 'CSS', 'JavaScript'],
-      demoUrl: 'https://cmendez20.github.io/calculator_v2/',
-      codeUrl: 'https://github.com/cmendez20/calculator_v2',
+      demoUrl: 'https://cmendez20.github.io/cocktail-app/',
+      codeUrl: 'https://github.com/cmendez20/cocktail-app',
       id: 4,
     },
   ];
